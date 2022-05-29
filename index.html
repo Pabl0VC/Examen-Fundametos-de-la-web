@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <img class="logo" src="./option-i-bootstrap/logo.png" alt="logo">
+                <ul class="nav-list">
+                    <li> <a href="#" class="nav" onmouseover="selectNav(this)" onmouseleave="noSelect(this)">Home</a></li>
+                    <li> <a href="#" class="nav" onmouseover="selectNav(this)" onmouseleave="noSelect(this)">Documentation</a></li>
+                    <li> <a href="#" class="nav" onmouseover="selectNav(this)" onmouseleave="noSelect(this)">Examples</a></li>
+                    <li> <a href="#" class="nav" onmouseover="selectNav(this)" onmouseleave="noSelect(this)">Themes</a></li>
+                    <li> <a href="#" class="nav" onmouseover="selectNav(this)" onmouseleave="noSelect(this)">Expo</a></li>
+                    <li> <a href="#" class="nav" onmouseover="selectNav(this)" onmouseleave="noSelect(this)">Blog</a></li>
+                </ul>
+            </div>
+            <div class="header-rigth">
+                <p class="version-bootstrap">v4.3</p>
+                <div class="icon">
+                    <img src="./option-i-bootstrap/ico-git.png" alt="GitHub" class="icon-header">
+                    <img src="./option-i-bootstrap/ico-twitter.png" alt="Twitter" class="icon-header">
+                    <img src="./option-i-bootstrap/ico-slack.png" alt="slack" class="icon-header">
+                    <img src="./option-i-bootstrap/ico-coll.png" alt="coll" class="icon-header">
+                </div>
+                <button type="button" class="header-download"  onclick= "loading(this)">Download</button>
+            </div>
+        </header>
+        <div class="body-bootstrap">
+            <div class="col-info">
+                <div class="content">
+                    <h1 class="title-content">Bootstrap</h1>
+                    <br>
+                    <p class="text-content">Build responsive, mobile-first projects on the web with the world's most popular front-end
+                        component library.
+                    </p> 
+                    <br>
+                    <p class="text-content">Bootstrap is an open source toolkit fordeveloping with HTML, CSS, and JS. Quickly
+                        prototype your ideas or build your entire app withour Sass variables and mixins, responsive grid
+                        system, extensive prebuilt components, andpowerful plugins built on jQuery.
+                    </p>
+                </div>
+                    <div class="buttons">
+                        <button class="started" type="button" onclick="action(this)" onmouseover="addShadow(this)" onmouseleave="removeShadow(this)">Get started</button>
+                        <button class="body-download" onclick="action(this)" onmouseover="addShadow(this)" onmouseleave="removeShadow(this)">Download</button>
+                        
+                    </div>
+                    <p 
+                        class="currently">Currently v4.3.1
+                    </p>
+                    <div class="extra">
+                        <img src="./option-i-bootstrap/ad-segment.png" alt="segment" class="img-segment">
+                        <p class="content-segment">Collect customer data
+                            once with a single API. Power your entire tech stack. <br>
+                            <span class="ads">ads via Carnon</span> 
+                        </p>
+                    </div>
+            </div>
+            <div class="col-img">
+                <img src="./option-i-bootstrap/main_img.png" alt="img-bootstrap" class="img-bootstrap">
+            </div>
+        </div>
+        <div class="section">
+            <div class="col-1">
+                <img src="./option-i-bootstrap/ico-install.png" alt="installation" class="icon-col">
+                <h2 
+                    class="title-col">Installation
+                </h2>
+                    <p 
+                    class="content-col">Include Bootstrap's source Sass and JavaScript
+                    files via nom, Composer or Meteor. Package managed installs don't include
+                    documentation, but do include our build system and readme.
+                    </p>
+                <div class="cods">
+                    <p class="cod-nom"><code >§ nom install bootstrap</code></p>
+                    <p class="cod-gem"><code >$ gem install bootstrap -v 4.3.1</code></p> 
+                    <p class="esp">________________</p>
+                </div>
+                <button class="btn-section" type="submit" onclick="errorAlert()" onmouseover="addShadowSection(this)" onmouseleave="removeShadowSection(this)">Read installation docs</button>
+            </div>
+            <div class="col-2">
+                <img src="./option-i-bootstrap/ico-cdn.png" alt="BootstrapCDN" class="icon-col">
+                <h2 class="title-col">BootstrapCDN</h2>
+                    <p class="content-col">When you only need to include Bootstrap's compiled CSS or JS, you
+                    can use <a href="#">BootstrapCDN.</a></p>
+                <h3 class="sub-docs">CSS only</h3>
+                <div class="box-scroll">
+                    <code>
+                        linkrel="stylesheethref="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+                    </code>
+                </div>
+                <h3 class="sub-docs">JS, Popper.js, and jQuery</h3>
+                <div class="box-scroll">
+                    <code>
+                        scriptsrc="https://code.jquery.com/jquery3.3.1.slim.min.js"integrity="sha384q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous">
+                    </code>
+                    <code>
+                        scriptsrc="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"integrity="sha384UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"crossorigin="anonymous">
+                    </code>
+                    <code>
+                        scriptsrc="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"integrity="sha384JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"crossorigin="anonymous">
+                    </code>
+                </div>
+                <p class="esp">________________</p>
+                <button class="btn-section" type="submit" onmouseover="addShadowSection(this)" onmouseleave="removeShadowSection(this)">Explorer the docs</button>
+            </div>
+            <div class="col-3">
+                <img src="./option-i-bootstrap/ico-themes.png" alt="official-themes" class="icon-col">
+                <h2 class="title-col">Official Themes</h2>
+                    <p 
+                        class="content-col">Take Bootstrap 4 to the next level with official premium themes-
+                            toolkits built on Bootstrap with new components and plugins, docs, and build tools.
+                    </p>
+                <img src="./option-i-bootstrap/theme_img.png" alt="themes" class="img-themes">
+                <p class="esp">________________</p>
+                <button class="btn-section" type="submit" onmouseover="addShadowSection(this)" onmouseleave="removeShadowSection(this)">Browse themes</button>
+            </div>
+        </div>
+        <div class="footer">
+                <ul class="nav-footer">
+                    <li><a href="#" class="list-footer">GitHub</a></li>
+                    <li><a href="#" class="list-footer">Twitter</a></li>
+                    <li><a href="#" class="list-footer">Examples</a></li>
+                    <li><a href="#" class="list-footer">About</a></li>
+                </ul>
+                <p 
+                    class="content-footer">Designed and built with all the love in the world by the 
+                    <span class="footer-neg">Bootstrap team</span>  with the helo of <span class="footer-neg">our contributors.</span>  <br> 
+                    Currently v4.3.1. Code licensed <span class="footer-neg">MIT</span> , docs <span class="footer-neg">CC  BY 3.0.</span> 
+                </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
